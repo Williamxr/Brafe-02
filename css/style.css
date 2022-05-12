@@ -86,6 +86,21 @@ body{
   float: left;
 }
 
+@media (min-width:800px) and (max-width:980px){
+  .container{
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 799px){
+  .container{
+    max-width: 300px;
+  }
+  .filtro{
+    display: none;
+  }
+}
+
 .filtro h2{
   font-size: 1.25em;
   padding: 10px 0;
@@ -184,6 +199,24 @@ body{
 .produtos li h2{
   font-size: 1em;
   font-weight: normal;
+}
+
+@media (min-width:800px) and (max-width:980px){
+  .produtos{
+    max-width: 460px;
+  }
+  .produtos li{
+    width: 220px;
+  }
+}
+
+@media (max-width: 799px){
+  .produtos{
+    max-width: 300px;
+  }
+  .produtos li{
+    width: 140px;
+  }
 }
 
 .footer{
